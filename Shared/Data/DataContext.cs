@@ -1,4 +1,5 @@
-﻿using Brokerfy.Shared.Models.Brokers;
+﻿using Brokerfy.Shared.Models.Aseguradoras;
+using Brokerfy.Shared.Models.Brokers;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -22,5 +23,7 @@ namespace Brokerfy.Shared.Data
         }
 
         public DbSet<Brokers> Brokers { get; set; }
+
+        public DbSet<Aseguradoras> Aseguradoras { get; set; }
     }
 }
